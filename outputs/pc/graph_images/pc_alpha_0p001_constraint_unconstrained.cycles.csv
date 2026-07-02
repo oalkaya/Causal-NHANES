@@ -1,0 +1,2 @@
+cycle_type,cycle_id,nodes
+directed,1,Income_Ratio -> Age -> Vigorous_Activity -> Income_Ratio

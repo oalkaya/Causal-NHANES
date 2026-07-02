@@ -1,5 +1,0 @@
-cycle_type,cycle_id,nodes
-directed,1,Age -> Vigorous_Activity -> Income_Ratio -> Age
-directed,2,Age -> Vigorous_Activity -> Waist_Circumference -> Age
-undirected_unresolved,1,Total_Calories -- Dietary_Fiber_g -- Total_Sugars_g -- Total_Calories
-undirected_unresolved,2,Total_Calories -- Protein_g -- Total_Sugars_g -- Total_Calories

@@ -1,0 +1,5 @@
+cycle_type,cycle_id,nodes
+directed,1,Protein_g -> Total_Calories -> Dietary_Fiber_g -> Carbohydrates_g -> Protein_g
+directed,2,Dietary_Fiber_g -> Sedentary_Minutes -> Total_Calories -> Dietary_Fiber_g
+directed,3,Dietary_Fiber_g -> Carbohydrates_g -> Sedentary_Minutes -> Total_Calories -> Dietary_Fiber_g
+directed,4,Diastolic_BP -> Sedentary_Minutes -> Total_Calories -> Diastolic_BP

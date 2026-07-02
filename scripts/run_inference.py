@@ -16,12 +16,12 @@ from dowhy import CausalModel
 #   python scripts/run_inference.py
 #   python -m scripts.run_inference
 if __package__:
-    from scripts.find_adjustment_sets import (
+    from utils.find_adjustment_sets import (
         is_valid_adjustment_set,
         make_backdoor_graph,
     )
 else:
-    from find_adjustment_sets import (
+    from utils.find_adjustment_sets import (
         is_valid_adjustment_set,
         make_backdoor_graph,
     )

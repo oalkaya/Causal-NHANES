@@ -1,6 +1,6 @@
 import networkx as nx
 
-from scripts.find_adjustment_sets import (
+from utils.find_adjustment_sets import (
     find_minimal_adjustment_sets,
 )
 
