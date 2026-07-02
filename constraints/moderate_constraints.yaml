@@ -1,0 +1,67 @@
+name: nhanes_moderate_tiers
+
+description: >
+  Moderate tiered background knowledge for NHANES causal discovery.
+
+tiers:
+  demographics:
+    order: 0
+    variables:
+      - Age
+      - Gender
+      - Income_Ratio
+
+  behavior_diet:
+    order: 1
+    variables:
+      - Vigorous_Activity
+      - Sedentary_Minutes
+      - Total_Calories
+      - Protein_g
+      - Carbohydrates_g
+      - Total_Sugars_g
+      - Dietary_Fiber_g
+
+  cardiometabolic:
+    order: 2
+    variables:
+      - BMI
+      - Waist_Circumference
+      - Systolic_BP
+      - Diastolic_BP
+
+no_parents:
+  # - Age
+  # - Gender
+
+parent_restrictions:
+  # Income_Ratio:
+  #   allowed_sources:
+  #     - Age
+  #     - Gender
+
+required_edges:
+# - source: Age
+#   target: BMI
+# - source: BMI
+#   target: Systolic_BP
+
+forbidden_edges:
+  # - source: BMI
+  #   target: Waist_Circumference
+
+same_tier_edges_allowed: true
+
+allowed_tier_breaks:
+  # - source: BMI
+  #   target: Vigorous_Activity
+  # - source: BMI
+  #   target: Sedentary_Minutes
+  # - source: Waist_Circumference
+  #   target: Vigorous_Activity
+  # - source: Waist_Circumference
+  #   target: Sedentary_Minutes
+  # - source: Systolic_BP
+  #   target: Vigorous_Activity
+  # - source: Diastolic_BP
+  #   target: Vigorous_Activity

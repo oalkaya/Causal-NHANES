@@ -1,0 +1,32 @@
+check,count
+rows_original,3842
+rows_clean,3800
+rows_dropped,42
+Age: missing_after_numeric_conversion,0
+Age: invalid_value,0
+Gender: missing_after_numeric_conversion,0
+Gender: invalid_value,0
+Income_Ratio: missing_after_numeric_conversion,0
+Income_Ratio: invalid_value,0
+BMI: missing_after_numeric_conversion,0
+BMI: invalid_value,0
+Waist_Circumference: missing_after_numeric_conversion,0
+Waist_Circumference: invalid_value,0
+Vigorous_Activity: missing_after_numeric_conversion,0
+Vigorous_Activity: invalid_value,0
+Sedentary_Minutes: missing_after_numeric_conversion,0
+Sedentary_Minutes: invalid_value,15
+Systolic_BP: missing_after_numeric_conversion,0
+Systolic_BP: invalid_value,0
+Diastolic_BP: missing_after_numeric_conversion,0
+Diastolic_BP: invalid_value,27
+Total_Calories: missing_after_numeric_conversion,0
+Total_Calories: invalid_value,0
+Protein_g: missing_after_numeric_conversion,0
+Protein_g: invalid_value,0
+Carbohydrates_g: missing_after_numeric_conversion,0
+Carbohydrates_g: invalid_value,0
+Total_Sugars_g: missing_after_numeric_conversion,0
+Total_Sugars_g: invalid_value,0
+Dietary_Fiber_g: missing_after_numeric_conversion,0
+Dietary_Fiber_g: invalid_value,0

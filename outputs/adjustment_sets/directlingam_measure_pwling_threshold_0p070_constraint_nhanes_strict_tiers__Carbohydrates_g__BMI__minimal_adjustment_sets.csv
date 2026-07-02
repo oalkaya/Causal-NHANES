@@ -1,0 +1,2 @@
+treatment,outcome,set_index,adjustment_set,n_adjustment_variables,common_causes,candidate_adjustment_variables
+Carbohydrates_g,BMI,1,Gender; Total_Sugars_g,2,Age; Gender; Total_Sugars_g,Age; Gender; Income_Ratio; Sedentary_Minutes; Total_Sugars_g; Vigorous_Activity

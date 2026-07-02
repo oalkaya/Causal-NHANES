@@ -1,0 +1,21 @@
+name: causalinference
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - networkx
+  - jupyter
+  - notebook
+  - jupyterlab
+  - ipykernel
+  - pip
+  - pip:
+      - causal-learn
+      - lingam
+      - dowhy
+      - pytest

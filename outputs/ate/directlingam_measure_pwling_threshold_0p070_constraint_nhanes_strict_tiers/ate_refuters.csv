@@ -1,0 +1,61 @@
+original_treatment,model_treatment,outcome,refuter,refutation_summary
+Vigorous_Activity,Vigorous_Activity,BMI,random_common_cause,"Refute: Add a random common cause
+Estimated effect:-1.777944847966296
+New effect:-1.7774689919562598
+p value:0.8600000000000001
+"
+Vigorous_Activity,Vigorous_Activity,BMI,placebo_treatment_refuter,"Refute: Use a Placebo Treatment
+Estimated effect:-1.777944847966296
+New effect:-0.015221112243391203
+p value:0.88
+"
+Vigorous_Activity,Vigorous_Activity,BMI,data_subset_refuter,"Refute: Use a subset of data
+Estimated effect:-1.777944847966296
+New effect:-1.7700596371791604
+p value:1.0
+"
+Total_Calories,Total_Calories_per_100kcal,BMI,random_common_cause,"Refute: Add a random common cause
+Estimated effect:0.026621235353967876
+New effect:0.026596443477044894
+p value:0.76
+"
+Total_Calories,Total_Calories_per_100kcal,BMI,placebo_treatment_refuter,"Refute: Use a Placebo Treatment
+Estimated effect:0.026621235353967876
+New effect:6.750155989720952e-14
+p value:0.0
+"
+Total_Calories,Total_Calories_per_100kcal,BMI,data_subset_refuter,"Refute: Use a subset of data
+Estimated effect:0.026621235353967876
+New effect:0.025616435387526622
+p value:0.94
+"
+Protein_g,Protein_per_10g,BMI,random_common_cause,"Refute: Add a random common cause
+Estimated effect:0.04459926981528639
+New effect:0.04461096746877228
+p value:0.98
+"
+Protein_g,Protein_per_10g,BMI,placebo_treatment_refuter,"Refute: Use a Placebo Treatment
+Estimated effect:0.04459926981528639
+New effect:-1.0231815394945443e-12
+p value:0.0
+"
+Protein_g,Protein_per_10g,BMI,data_subset_refuter,"Refute: Use a subset of data
+Estimated effect:0.04459926981528639
+New effect:0.043243697924468805
+p value:0.98
+"
+Carbohydrates_g,Carbohydrates_per_10g,BMI,random_common_cause,"Refute: Add a random common cause
+Estimated effect:-0.034898174488127154
+New effect:-0.03490889325672157
+p value:0.82
+"
+Carbohydrates_g,Carbohydrates_per_10g,BMI,placebo_treatment_refuter,"Refute: Use a Placebo Treatment
+Estimated effect:-0.034898174488127154
+New effect:3.907985046680551e-13
+p value:0.0
+"
+Carbohydrates_g,Carbohydrates_per_10g,BMI,data_subset_refuter,"Refute: Use a subset of data
+Estimated effect:-0.034898174488127154
+New effect:-0.03447911342127462
+p value:0.8799999999999999
+"

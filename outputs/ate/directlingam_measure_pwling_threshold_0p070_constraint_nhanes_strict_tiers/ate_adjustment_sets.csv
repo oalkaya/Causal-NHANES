@@ -1,0 +1,5 @@
+original_treatment,model_treatment,outcome,adjustment_set,n_adjustment_variables
+Vigorous_Activity,Vigorous_Activity,BMI,Gender; Sedentary_Minutes; Age,3
+Total_Calories,Total_Calories_per_100kcal,BMI,Vigorous_Activity; Sedentary_Minutes; Dietary_Fiber_g,3
+Protein_g,Protein_per_10g,BMI,Total_Sugars_g; Carbohydrates_g; Gender,3
+Carbohydrates_g,Carbohydrates_per_10g,BMI,Total_Sugars_g; Gender,2

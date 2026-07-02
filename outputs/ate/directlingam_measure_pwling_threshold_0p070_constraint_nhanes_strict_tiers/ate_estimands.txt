@@ -1,0 +1,223 @@
+
+================================================================================
+Treatment: Vigorous_Activity
+================================================================================
+
+Estimand type: EstimandType.NONPARAMETRIC_ATE
+
+### Estimand : 1
+Estimand name: backdoor
+Estimand expression:
+         d                                               
+────────────────────(E[BMI|Gender,Sedentary_Minutes,Age])
+d[Vigorous_Activity]                                     
+Estimand assumption 1, Unconfoundedness: If U→{Vigorous_Activity} and U→BMI then P(BMI|Vigorous_Activity,Gender,Sedentary_Minutes,Age,U) = P(BMI|Vigorous_Activity,Gender,Sedentary_Minutes,Age)
+
+### Estimand : 2
+Estimand name: iv
+No such variable(s) found!
+
+### Estimand : 3
+Estimand name: frontdoor
+No such variable(s) found!
+
+### Estimand : 4
+Estimand name: general_adjustment
+Estimand expression:
+         d                                          
+────────────────────(E[BMI|Gender,Income_Ratio,Age])
+d[Vigorous_Activity]                                
+Estimand assumption 1, Unconfoundedness: If U→{Vigorous_Activity} and U→BMI then P(BMI|Vigorous_Activity,Gender,Income_Ratio,Age,U) = P(BMI|Vigorous_Activity,Gender,Income_Ratio,Age)
+
+
+Estimate:
+*** Causal Estimate ***
+
+## Identified estimand
+Estimand type: EstimandType.NONPARAMETRIC_ATE
+
+### Estimand : 1
+Estimand name: backdoor
+Estimand expression:
+         d                                               
+────────────────────(E[BMI|Gender,Sedentary_Minutes,Age])
+d[Vigorous_Activity]                                     
+Estimand assumption 1, Unconfoundedness: If U→{Vigorous_Activity} and U→BMI then P(BMI|Vigorous_Activity,Gender,Sedentary_Minutes,Age,U) = P(BMI|Vigorous_Activity,Gender,Sedentary_Minutes,Age)
+
+## Realized estimand
+b: BMI~Vigorous_Activity+Gender+Sedentary_Minutes+Age
+Target units: ate
+
+## Estimate
+Mean value: -1.777944847966296
+p-value: [1.39334952e-10]
+95.0% confidence interval: [[-2.31968494 -1.23620476]]
+
+
+
+================================================================================
+Treatment: Total_Calories
+================================================================================
+
+Estimand type: EstimandType.NONPARAMETRIC_ATE
+
+### Estimand : 1
+Estimand name: backdoor
+Estimand expression:
+              d                                                                          
+─────────────────────────────(E[BMI|Vigorous_Activity,Sedentary_Minutes,Dietary_Fiber_g])
+d[Total_Calories_per_100kcal]                                                            
+Estimand assumption 1, Unconfoundedness: If U→{Total_Calories_per_100kcal} and U→BMI then P(BMI|Total_Calories_per_100kcal,Vigorous_Activity,Sedentary_Minutes,Dietary_Fiber_g,U) = P(BMI|Total_Calories_per_100kcal,Vigorous_Activity,Sedentary_Minutes,Dietary_Fiber_g)
+
+### Estimand : 2
+Estimand name: iv
+No such variable(s) found!
+
+### Estimand : 3
+Estimand name: frontdoor
+No such variable(s) found!
+
+### Estimand : 4
+Estimand name: general_adjustment
+Estimand expression:
+              d                                                                               
+─────────────────────────────(E[BMI|Total_Sugars_g,Dietary_Fiber_g,Protein_g,Carbohydrates_g])
+d[Total_Calories_per_100kcal]                                                                 
+Estimand assumption 1, Unconfoundedness: If U→{Total_Calories_per_100kcal} and U→BMI then P(BMI|Total_Calories_per_100kcal,Total_Sugars_g,Dietary_Fiber_g,Protein_g,Carbohydrates_g,U) = P(BMI|Total_Calories_per_100kcal,Total_Sugars_g,Dietary_Fiber_g,Protein_g,Carbohydrates_g)
+
+
+Estimate:
+*** Causal Estimate ***
+
+## Identified estimand
+Estimand type: EstimandType.NONPARAMETRIC_ATE
+
+### Estimand : 1
+Estimand name: backdoor
+Estimand expression:
+              d                                                                          
+─────────────────────────────(E[BMI|Vigorous_Activity,Sedentary_Minutes,Dietary_Fiber_g])
+d[Total_Calories_per_100kcal]                                                            
+Estimand assumption 1, Unconfoundedness: If U→{Total_Calories_per_100kcal} and U→BMI then P(BMI|Total_Calories_per_100kcal,Vigorous_Activity,Sedentary_Minutes,Dietary_Fiber_g,U) = P(BMI|Total_Calories_per_100kcal,Vigorous_Activity,Sedentary_Minutes,Dietary_Fiber_g)
+
+## Realized estimand
+b: BMI~Total_Calories_per_100kcal+Vigorous_Activity+Sedentary_Minutes+Dietary_Fiber_g
+Target units: ate
+
+## Estimate
+Mean value: 0.026621235353967876
+p-value: [0.04249538]
+95.0% confidence interval: [[0.00090163 0.05234084]]
+
+
+
+================================================================================
+Treatment: Protein_g
+================================================================================
+
+Estimand type: EstimandType.NONPARAMETRIC_ATE
+
+### Estimand : 1
+Estimand name: backdoor
+Estimand expression:
+        d                                                       
+──────────────────(E[BMI|Total_Sugars_g,Carbohydrates_g,Gender])
+d[Protein_per_10g]                                              
+Estimand assumption 1, Unconfoundedness: If U→{Protein_per_10g} and U→BMI then P(BMI|Protein_per_10g,Total_Sugars_g,Carbohydrates_g,Gender,U) = P(BMI|Protein_per_10g,Total_Sugars_g,Carbohydrates_g,Gender)
+
+### Estimand : 2
+Estimand name: iv
+No such variable(s) found!
+
+### Estimand : 3
+Estimand name: frontdoor
+No such variable(s) found!
+
+### Estimand : 4
+Estimand name: general_adjustment
+Estimand expression:
+        d                                                       
+──────────────────(E[BMI|Gender,Total_Sugars_g,Carbohydrates_g])
+d[Protein_per_10g]                                              
+Estimand assumption 1, Unconfoundedness: If U→{Protein_per_10g} and U→BMI then P(BMI|Protein_per_10g,Gender,Total_Sugars_g,Carbohydrates_g,U) = P(BMI|Protein_per_10g,Gender,Total_Sugars_g,Carbohydrates_g)
+
+
+Estimate:
+*** Causal Estimate ***
+
+## Identified estimand
+Estimand type: EstimandType.NONPARAMETRIC_ATE
+
+### Estimand : 1
+Estimand name: backdoor
+Estimand expression:
+        d                                                       
+──────────────────(E[BMI|Total_Sugars_g,Carbohydrates_g,Gender])
+d[Protein_per_10g]                                              
+Estimand assumption 1, Unconfoundedness: If U→{Protein_per_10g} and U→BMI then P(BMI|Protein_per_10g,Total_Sugars_g,Carbohydrates_g,Gender,U) = P(BMI|Protein_per_10g,Total_Sugars_g,Carbohydrates_g,Gender)
+
+## Realized estimand
+b: BMI~Protein_per_10g+Total_Sugars_g+Carbohydrates_g+Gender
+Target units: ate
+
+## Estimate
+Mean value: 0.04459926981528639
+p-value: [0.17219497]
+95.0% confidence interval: [[-0.01943921  0.10863775]]
+
+
+
+================================================================================
+Treatment: Carbohydrates_g
+================================================================================
+
+Estimand type: EstimandType.NONPARAMETRIC_ATE
+
+### Estimand : 1
+Estimand name: backdoor
+Estimand expression:
+           d                                          
+────────────────────────(E[BMI|Total_Sugars_g,Gender])
+d[Carbohydrates_per_10g]                              
+Estimand assumption 1, Unconfoundedness: If U→{Carbohydrates_per_10g} and U→BMI then P(BMI|Carbohydrates_per_10g,Total_Sugars_g,Gender,U) = P(BMI|Carbohydrates_per_10g,Total_Sugars_g,Gender)
+
+### Estimand : 2
+Estimand name: iv
+No such variable(s) found!
+
+### Estimand : 3
+Estimand name: frontdoor
+No such variable(s) found!
+
+### Estimand : 4
+Estimand name: general_adjustment
+Estimand expression:
+           d                                          
+────────────────────────(E[BMI|Gender,Total_Sugars_g])
+d[Carbohydrates_per_10g]                              
+Estimand assumption 1, Unconfoundedness: If U→{Carbohydrates_per_10g} and U→BMI then P(BMI|Carbohydrates_per_10g,Gender,Total_Sugars_g,U) = P(BMI|Carbohydrates_per_10g,Gender,Total_Sugars_g)
+
+
+Estimate:
+*** Causal Estimate ***
+
+## Identified estimand
+Estimand type: EstimandType.NONPARAMETRIC_ATE
+
+### Estimand : 1
+Estimand name: backdoor
+Estimand expression:
+           d                                          
+────────────────────────(E[BMI|Total_Sugars_g,Gender])
+d[Carbohydrates_per_10g]                              
+Estimand assumption 1, Unconfoundedness: If U→{Carbohydrates_per_10g} and U→BMI then P(BMI|Carbohydrates_per_10g,Total_Sugars_g,Gender,U) = P(BMI|Carbohydrates_per_10g,Total_Sugars_g,Gender)
+
+## Realized estimand
+b: BMI~Carbohydrates_per_10g+Total_Sugars_g+Gender
+Target units: ate
+
+## Estimate
+Mean value: -0.034898174488127154
+p-value: [0.03986577]
+95.0% confidence interval: [[-0.06817938 -0.00161697]]
+

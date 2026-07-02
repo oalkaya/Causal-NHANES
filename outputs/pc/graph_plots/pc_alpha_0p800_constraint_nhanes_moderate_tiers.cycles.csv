@@ -1,0 +1,3 @@
+cycle_type,cycle_id,nodes
+directed,1,BMI -> Systolic_BP -> Waist_Circumference -> BMI
+directed,2,BMI -> Systolic_BP -> Diastolic_BP -> Waist_Circumference -> BMI

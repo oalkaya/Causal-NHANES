@@ -1,0 +1,5 @@
+treatment,outcome,set_index,adjustment_set,n_adjustment_variables,common_causes,candidate_adjustment_variables
+Vigorous_Activity,BMI,1,Age; Gender; Income_Ratio,3,Age; Gender; Income_Ratio,Age; Carbohydrates_g; Gender; Income_Ratio; Protein_g; Sedentary_Minutes; Total_Sugars_g
+Vigorous_Activity,BMI,2,Age; Gender; Sedentary_Minutes,3,Age; Gender; Income_Ratio,Age; Carbohydrates_g; Gender; Income_Ratio; Protein_g; Sedentary_Minutes; Total_Sugars_g
+Vigorous_Activity,BMI,3,Age; Carbohydrates_g; Income_Ratio; Protein_g; Total_Sugars_g,5,Age; Gender; Income_Ratio,Age; Carbohydrates_g; Gender; Income_Ratio; Protein_g; Sedentary_Minutes; Total_Sugars_g
+Vigorous_Activity,BMI,4,Age; Carbohydrates_g; Protein_g; Sedentary_Minutes; Total_Sugars_g,5,Age; Gender; Income_Ratio,Age; Carbohydrates_g; Gender; Income_Ratio; Protein_g; Sedentary_Minutes; Total_Sugars_g

@@ -1,0 +1,5 @@
+original_treatment,model_treatment,outcome,adjustment_mode,manual_adjustment_validated,adjustment_set,n_adjustment_variables
+Vigorous_Activity,Vigorous_Activity,BMI,manual,True,Age; Gender; Income_Ratio,3
+Total_Calories,Total_Calories_per_100kcal,BMI,manual,True,Dietary_Fiber_g; Income_Ratio; Vigorous_Activity,3
+Protein_g,Protein_per_10g,BMI,manual,True,Carbohydrates_g; Gender; Total_Sugars_g,3
+Carbohydrates_g,Carbohydrates_per_10g,BMI,manual,True,Gender; Total_Sugars_g,2
