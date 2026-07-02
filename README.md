@@ -67,6 +67,24 @@ Causal-NHANES/
 - `outputs/` contains generated graphs, summaries, adjustment sets, visualizations, and inference results.
 
 
+# Workflow
+
+1. **NHANES dataset preprocessing**  
+   `utils/preprocess_nhanes.py`
+
+2. **Causal discovery with PC, DirectLiNGAM, and RESIT**  
+   `scripts/run_pc.py`, `scripts/run_directlingam.py`, `scripts/run_resit.py`  
+   Background-knowledge constraints are handled by `utils/constraints.py`.
+
+3. **Graph inspection and DAG selection**  
+   `utils/check_treatment_paths.py`, `utils/visualize_graph_csv.py`
+
+4. **Treatment-specific adjustment-set identification**  
+   `utils/find_adjustment_sets.py`
+
+5. **ATE estimation on BMI with DoWhy**  
+   `scripts/run_inference.py`
+
 # Scripts
 
 ### Causal discovery
