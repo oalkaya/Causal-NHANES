@@ -57,6 +57,7 @@ Causal-NHANES/
 │   ├── preprocess_nhanes.py
 │   ├── test_adjustment_sets.py
 │   └── visualize_graph_csv.py
+├── deliverables/
 ...
 ```
 
@@ -65,6 +66,7 @@ Causal-NHANES/
 - `scripts/` contains the main causal discovery and ATE estimation pipelines.
 - `utils/` contains preprocessing, validation, graph inspection, visualization, and adjustment-set utilities.
 - `outputs/` contains generated graphs, summaries, adjustment sets, visualizations, and inference results.
+- `deliverables/` contains the project report and presentation.
 
 
 # Workflow
